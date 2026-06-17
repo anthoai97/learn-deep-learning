@@ -102,3 +102,11 @@ uv init
 uv add torch torchvision numpy matplotlib
 uv run python data.py
 ```
+
+### Daily working cmd
+
+```bash
+uv lock
+
+uv sync --package handwritten-digit-classifier
+```
