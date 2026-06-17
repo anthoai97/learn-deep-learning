@@ -11,3 +11,6 @@ wheels/
 # Local datasets
 data/
 **/data/
+
+# Trained model artifacts
+**/models/*.pt
