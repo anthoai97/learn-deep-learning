@@ -9,7 +9,10 @@ print(f"DATA_DIR: {DATA_DIR}")
 def get_mnist_data(batch_size: int = 32):
 	print("Getting MNIST data...")
 
-	transform = transforms.ToTensor()
+	transform = transforms.Compose([
+		transforms.ToTensor(),
+		transforms.Normalize((0.1307,), (0.3081,))
+	])
 
 	full_train_dataset = datasets.MNIST(
 		root=DATA_DIR,
