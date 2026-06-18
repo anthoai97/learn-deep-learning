@@ -13,7 +13,6 @@ MODEL_PATH = MODEL_DIR / "digit_classifier.pt"
 def train_one_epoch(model, train_loader, loss_fn, optimizer, device):
 	total_loss = 0
 	model.train() # Tells PyTorch we are in training mode, which can affect layers like dropout and batchnorm
-	model = model.to(device)
 	for images, labels in train_loader:
 		images, labels = images.to(device), labels.to(device)
 
