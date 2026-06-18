@@ -4,11 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "datasets>=5.0.0",
+]
 
 [tool.uv.workspace]
 members = [
     "*/",
     "handwritten-digit-classifier",
+    "sentiment-classifier",
 ]
 exclude = [".venv", ".git"]
