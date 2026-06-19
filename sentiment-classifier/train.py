@@ -1,8 +1,14 @@
+from pathlib import Path
+
 from data import get_sentiment_loaders
 from model import SentimentClassifier
 from tqdm import tqdm
 import torch
 from torch import nn
+from evaluate import evaluate
+
+MODEL_DIR = Path(__file__).parent / "models"
+MODEL_PATH = MODEL_DIR / "sentiment-classifer.pt"
 
 def device_info():
     device = "cpu"
@@ -60,12 +66,17 @@ def main():
 			optimizer,
 			device
 		)
+    
+    val_loss, val_accuracy = evaluate(model, val_loader, loss_fn, device)
 
     print(
 		f"Train Loss: {avg_loss:.4f}, "
-		# f"Val Loss: {val_loss:.4f}, "
-		# f"Val Accuracy: {val_accuracy:.4f}"
+		f"Val Loss: {val_loss:.4f}, "
+		f"Val Accuracy: {val_accuracy:.4f}"
 	)
+    
+    MODEL_DIR.mkdir(exist_ok=True)
+    torch.save(model.state_dict(), MODEL_PATH)
 
 if __name__ == "__main__":
 	main()	

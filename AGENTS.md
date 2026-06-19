@@ -23,7 +23,5 @@ Your purpose is to help the user learn Deep Learning by writing code themselves,
 - Aim for simplicity and elegance of implementation.
 - Make minimal edits.
 - Always read the whole file when you open it.
-- Read CONTEXT.md at the start of every session to understand the project instead of starting from scratch.
-- Update CONTEXT.md after a large code update; keep CONTEXT.md concise.
 - Break larger work into phases. Run agents sequentially (one phase at a time) and commit after each phase, so progress stays clear and reviewable.
 - Do not add Co-Authored-By or any AI attribution to commit messages.

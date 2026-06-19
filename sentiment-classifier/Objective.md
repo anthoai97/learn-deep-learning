@@ -3,9 +3,9 @@
 Build a movie review sentiment classifier that outputs Positive/Negative with probability.
 
 Works:
-- [] Load dataset - IMDb Reviews (Hugging Face): https://huggingface.co/datasets/stanfordnlp/imdb
-- [] Tokenization, vocabuluary, embedding
-- [] Network
-- [] Train - Val - Test
-- [] Inference
-- [] Optimise
+- [x] Load dataset - IMDb Reviews (Hugging Face): https://huggingface.co/datasets/stanfordnlp/imdb
+- [x] Tokenization, vocabuluary, embedding
+- [x] Network
+- [x] Train - Val - Test
+- [x] Inference
+- [] Optimize - Architect, Train Loop, ...

@@ -1,6 +1,5 @@
 import torch
 
-
 def evaluate(model, data_loader, loss_fn, device):
     model.eval()
 
