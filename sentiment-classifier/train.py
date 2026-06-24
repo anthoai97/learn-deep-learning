@@ -1,4 +1,5 @@
 from pathlib import Path
+import time
 
 from data import get_sentiment_loaders
 from model import SentimentClassifier
@@ -9,6 +10,7 @@ from evaluate import evaluate
 
 MODEL_DIR = Path(__file__).parent / "models"
 MODEL_PATH = MODEL_DIR / "sentiment-classifer.pt"
+EPOCHS = 10
 
 def device_info():
     device = "cpu"
@@ -25,7 +27,6 @@ def device_info():
 
 def train_one_epoch(model, train_loader, loss_fn, optimizer, device):
     total_loss = 0
-    print("Debug")
     model.train()
 
     for input_ids, labels in tqdm(train_loader):
@@ -58,23 +59,44 @@ def main():
     model = model.to(device)
     loss_fn = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    
-    avg_loss = train_one_epoch(
-			model,
-			train_loader,
-			loss_fn,
-			optimizer,
-			device
-		)
-    
-    val_loss, val_accuracy = evaluate(model, val_loader, loss_fn, device)
 
-    print(
-		f"Train Loss: {avg_loss:.4f}, "
-		f"Val Loss: {val_loss:.4f}, "
-		f"Val Accuracy: {val_accuracy:.4f}"
+    start_time = time.time()
+    print("Starting training loop...")
+    for epoch in range(EPOCHS):
+    
+        avg_loss = train_one_epoch(
+                model,
+                train_loader,
+                loss_fn,
+                optimizer,
+                device
+            )
+    
+        val_loss, val_accuracy = evaluate(model, val_loader, loss_fn, device)
+
+        print(
+            f"Epoch [{epoch+1}/{EPOCHS}] "
+            f"Train Loss: {avg_loss:.4f}, "
+            f"Val Loss: {val_loss:.4f}, "
+            f"Val Accuracy: {val_accuracy:.4f}"
+        )
+    
+    print("Training complete!")
+    print(f"Total training time: {time.time() - start_time:.2f} seconds")
+    print("Evaluating on test set...")
+
+    test_loss, test_accuracy = evaluate(
+		model,
+		test_loader,
+		loss_fn,
+		device
 	)
     
+    print(
+		f"Test Loss: {test_loss:.4f}, "
+		f"Test Accuracy: {test_accuracy:.4f}"
+	)
+
     MODEL_DIR.mkdir(exist_ok=True)
     torch.save(model.state_dict(), MODEL_PATH)
 

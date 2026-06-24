@@ -19,6 +19,7 @@ model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
 model.eval()
 
 label_names = ["negative", "positive"]
+NUMBER_SAMPLE = 32
 
 # 1. Run all test data for accuracy
 total_correct = 0
@@ -36,10 +37,10 @@ with torch.no_grad():
 test_accuracy = total_correct / total_samples
 print(f"Test Accuracy: {test_accuracy:.4f}")
 
-# 2. Visualize only 20 samples
+# 2. Visualize only NUMBER_SAMPLE samples
 visual_input_ids, visual_labels = next(iter(test_loader))
-visual_input_ids = visual_input_ids[:20]
-visual_labels = visual_labels[:20]
+visual_input_ids = visual_input_ids[:NUMBER_SAMPLE]
+visual_labels = visual_labels[:NUMBER_SAMPLE]
 
 with torch.no_grad():
     visual_logits = model(visual_input_ids)
@@ -48,27 +49,27 @@ with torch.no_grad():
 
 raw_texts = [
     test_loader.dataset.data[i]["text"]
-    for i in range(20)
+    for i in range(NUMBER_SAMPLE)
 ]
 
 colors = [
     "green" if visual_predictions[i].item() == visual_labels[i].item() else "red"
-    for i in range(20)
+    for i in range(NUMBER_SAMPLE)
 ]
 
 confidences = [
     visual_probabilities[i, visual_predictions[i]].item()
-    for i in range(20)
+    for i in range(NUMBER_SAMPLE)
 ]
 
 titles = [
     f"{i}: {label_names[visual_predictions[i].item()]}"
-    for i in range(20)
+    for i in range(NUMBER_SAMPLE)
 ]
 
 report_lines = []
 
-for i in range(20):
+for i in range(NUMBER_SAMPLE):
     true_label = label_names[visual_labels[i].item()]
     predicted_label = label_names[visual_predictions[i].item()]
     confidence = confidences[i]
@@ -82,13 +83,13 @@ for i in range(20):
         f"Confidence: {confidence:.4f}\n"
     )
 
-    print(sample_report)
+    # print(sample_report)
     report_lines.append(sample_report)
 
 plt.figure(figsize=(10, 8))
 plt.barh(titles, confidences, color=colors)
 plt.xlabel("Confidence")
-plt.title("Sentiment predictions on 20 test samples")
+plt.title("Sentiment predictions on NUMBER_SAMPLE test samples")
 plt.xlim(0, 1)
 plt.tight_layout()
 OUTPUT_DIR.mkdir(exist_ok=True)
