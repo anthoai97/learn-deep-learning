@@ -10,7 +10,7 @@ from evaluate import evaluate
 
 MODEL_DIR = Path(__file__).parent / "models"
 MODEL_PATH = MODEL_DIR / "sentiment-classifer.pt"
-EPOCHS = 10
+EPOCHS = 30
 
 def device_info():
     device = "cpu"
