@@ -13,5 +13,6 @@ members = [
     "*/",
     "handwritten-digit-classifier",
     "sentiment-classifier",
+    "gpt",
 ]
 exclude = [".venv", ".git"]
