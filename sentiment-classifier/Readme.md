@@ -31,9 +31,10 @@ test loss became worse.
 The inference script evaluates the saved model on the test set, writes a text
 report for sample predictions, and saves a confidence chart.
 
+![Batch inference predictions](outputs/inference_batch.png)
+
 ```text
 outputs/sentiment_predictions.txt
-outputs/inference_batch.png
 ```
 
 ## Dataset
