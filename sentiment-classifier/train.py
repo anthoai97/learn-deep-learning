@@ -61,7 +61,6 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     start_time = time.time()
-    print("Starting training loop...")
     for epoch in range(EPOCHS):
     
         avg_loss = train_one_epoch(
@@ -81,9 +80,7 @@ def main():
             f"Val Accuracy: {val_accuracy:.4f}"
         )
     
-    print("Training complete!")
     print(f"Total training time: {time.time() - start_time:.2f} seconds")
-    print("Evaluating on test set...")
 
     test_loss, test_accuracy = evaluate(
 		model,

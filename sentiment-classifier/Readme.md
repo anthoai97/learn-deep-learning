@@ -252,6 +252,16 @@ Total training time: 1292.08 seconds
 Test Loss: 0.9555, Test Accuracy: 0.8433
 ```
 
+### 2026-06-26: Try to run with CUDA GPU (Very fast)
+
+30 epochs:
+```
+NVIDIA GeForce RTX 5060 Ti
+Epoch [30/30] Train Loss: 0.0003, Val Loss: 1.0210, Val Accuracy: 0.8614
+Total training time: 225.03 seconds
+Test Loss: 1.0218, Test Accuracy: 0.8534
+```
+
 ## What I Learned
 
 - How raw text becomes token ids through tokenization and vocabulary lookup.

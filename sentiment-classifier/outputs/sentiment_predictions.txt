@@ -2,190 +2,190 @@
 Review:     I love sci-fi and am willing to put up with a lot. Sci-fi movies/TV are usually underfunded, under-appreciated and misun...
 True:       negative
 Predicted:  negative
-Confidence: 0.9970
+Confidence: 1.0000
 
 ================================================================================
 Review:     Worth the entertainment value of a rental, especially if you like action movies. This one features the usual car chases,...
 True:       negative
 Predicted:  negative
-Confidence: 0.9831
+Confidence: 0.9995
 
 ================================================================================
 Review:     its a totally average film with a few semi-alright action sequences that make the plot seem a little better and remind t...
 True:       negative
 Predicted:  negative
-Confidence: 0.9718
+Confidence: 1.0000
 
 ================================================================================
 Review:     STAR RATING: ***** Saturday Night **** Friday Night *** Friday Morning ** Sunday Night * Monday Morning   Former New Orl...
 True:       negative
 Predicted:  negative
-Confidence: 0.9992
+Confidence: 0.9983
 
 ================================================================================
 Review:     First off let me say, If you haven't enjoyed a Van Damme movie since bloodsport, you probably will not like this movie. ...
 True:       negative
 Predicted:  positive
-Confidence: 0.8759
+Confidence: 0.9967
 
 ================================================================================
 Review:     I had high hopes for this one until they changed the name to 'The Shepherd : Border Patrol, the lamest movie name ever, ...
 True:       negative
 Predicted:  negative
-Confidence: 0.9936
+Confidence: 1.0000
 
 ================================================================================
 Review:     Isaac Florentine has made some of the best western Martial Arts action movies ever produced. In particular US Seals 2, C...
 True:       negative
 Predicted:  negative
-Confidence: 0.9687
+Confidence: 0.9999
 
 ================================================================================
 Review:     It actually pains me to say it, but this movie was horrible on every level. The blame does not lie entirely with Van Dam...
 True:       negative
 Predicted:  negative
-Confidence: 0.9997
+Confidence: 1.0000
 
 ================================================================================
 Review:     Technically I'am a Van Damme Fan, or I was. this movie is so bad that I hated myself for wasting those 90 minutes. Do no...
 True:       negative
 Predicted:  negative
-Confidence: 0.9989
+Confidence: 1.0000
 
 ================================================================================
 Review:     Honestly awful film, bad editing, awful lighting, dire dialog and scrappy screenplay.  The lighting at is so bad there's...
 True:       negative
 Predicted:  negative
-Confidence: 0.9984
+Confidence: 1.0000
 
 ================================================================================
 Review:     This flick is a waste of time.I expect from an action movie to have more than 2 explosions and some shooting.Van Damme's...
 True:       negative
 Predicted:  negative
-Confidence: 0.9695
+Confidence: 1.0000
 
 ================================================================================
 Review:     Blind Date (Columbia Pictures, 1934), was a decent film, but I have a few issues with this film. First of all, I don't f...
 True:       negative
 Predicted:  negative
-Confidence: 0.9467
+Confidence: 1.0000
 
 ================================================================================
 Review:     I first watched this movie back in the mid/late 80's, when I was a kid. We couldn't even get all the way through it. The...
 True:       negative
 Predicted:  negative
-Confidence: 0.9888
+Confidence: 1.0000
 
 ================================================================================
 Review:     I saw the Mogul Video VHS of this. That's another one of those old 1980s distributors whose catalog I wish I had!  This ...
 True:       negative
 Predicted:  negative
-Confidence: 0.9967
+Confidence: 1.0000
 
 ================================================================================
 Review:     A group of heirs to a mysterious old mansion find out that they have to live in it as part of a clause in the will or be...
 True:       negative
 Predicted:  negative
-Confidence: 0.9801
+Confidence: 1.0000
 
 ================================================================================
 Review:     Now, I LOVE Italian horror films. The cheesier they are, the better. However, this is not cheesy Italian. This is week-o...
 True:       negative
 Predicted:  positive
-Confidence: 0.8566
+Confidence: 1.0000
 
 ================================================================================
 Review:     This cheap, grainy-filmed Italian flick is about a couple of inheritors of a manor in the Italian countryside who head u...
 True:       negative
-Predicted:  positive
-Confidence: 0.5043
+Predicted:  negative
+Confidence: 0.9602
 
 ================================================================================
 Review:     I just finished watching this movie and am disappointed to say that I didn't enjoy it a bit. It is so slow Slow and unin...
 True:       negative
 Predicted:  negative
-Confidence: 0.9165
+Confidence: 1.0000
 
 ================================================================================
 Review:     Ben, (Rupert Grint), is a deeply unhappy adolescent, the son of his unhappily married parents. His father, (Nicholas Far...
 True:       negative
 Predicted:  negative
-Confidence: 0.9579
+Confidence: 0.9380
 
 ================================================================================
 Review:     Every movie I have PPV'd because Leonard Maltin praised it to the skies has blown chunks! Every single one! When will I ...
 True:       negative
 Predicted:  negative
-Confidence: 0.9988
+Confidence: 1.0000
 
 ================================================================================
 Review:     Low budget horror movie. If you don't raise your expectations too high, you'll probably enjoy this little flick. Beginni...
 True:       negative
 Predicted:  negative
-Confidence: 0.9961
+Confidence: 1.0000
 
 ================================================================================
 Review:     Dr Stephens (Micheal Harvey) runs a mental asylum. He has a different approach to the insane. He conducts unorthodox met...
 True:       negative
 Predicted:  negative
-Confidence: 0.9699
+Confidence: 0.9993
 
 ================================================================================
 Review:     The Forgotten (AKA: Don't Look In The Basement) is a very cheaply made and very old looking horror movie.  The story is ...
 True:       negative
 Predicted:  positive
-Confidence: 0.9920
+Confidence: 1.0000
 
 ================================================================================
 Review:     This movie had a very unique effect on me: it stalled my realization that this movie REALLY sucks! It is disguised as a ...
 True:       negative
 Predicted:  negative
-Confidence: 0.9368
+Confidence: 0.9999
 
 ================================================================================
 Review:     too bad this movie isn't. While "Nemesis Game" is mildly entertaining, I found it hard to suspend my disbelief the whole...
 True:       negative
 Predicted:  negative
-Confidence: 0.9480
+Confidence: 0.9995
 
 ================================================================================
 Review:     I of course saw the previews for this at the beginning of some other Lion's Gate extravaganza, so of course it was only ...
 True:       negative
 Predicted:  negative
-Confidence: 0.9880
+Confidence: 1.0000
 
 ================================================================================
 Review:     I gave this a 3 out of a possible 10 stars.  Unless you like wasting your time watching an anorexic actress, in this fil...
 True:       negative
 Predicted:  negative
-Confidence: 0.9938
+Confidence: 1.0000
 
 ================================================================================
 Review:     I was looking forward to this movie. Trustworthy actors, interesting plot. Great atmosphere then ????? IF you are going ...
 True:       negative
 Predicted:  negative
-Confidence: 0.7462
+Confidence: 0.9996
 
 ================================================================================
 Review:     Four things intrigued me as to this film - firstly, it stars Carly Pope (of "Popular" fame), who is always a pleasure to...
 True:       negative
 Predicted:  negative
-Confidence: 0.9942
+Confidence: 0.9999
 
 ================================================================================
 Review:       Never ever take a film just for its good looking title.  Although it all starts well, the film suffers the same imperf...
 True:       negative
 Predicted:  positive
-Confidence: 0.9253
+Confidence: 0.9862
 
 ================================================================================
 Review:     Lowe returns to the nest after, yet another, failed relationship, to find he's been assigned to jury duty. It's in the p...
 True:       negative
 Predicted:  negative
-Confidence: 0.9984
+Confidence: 1.0000
 
 ================================================================================
 Review:     Seriously, I can't imagine how anyone could find a single flattering thing to say about this movie, much less find it in...
 True:       negative
 Predicted:  negative
-Confidence: 0.9998
+Confidence: 1.0000
