@@ -85,8 +85,8 @@ def prepare_data(num_stories = 3000, force_preprocess=False):
 def main():
     train_data, val_data, encode, decode, vocab_size = prepare_data()
 
-    batch_size = 4
-    context_length = 8
+    batch_size = 32
+    context_length = 64
 
     x, y = get_batch(train_data, batch_size, context_length)
 
